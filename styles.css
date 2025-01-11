@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+min-height:100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#header {
+    height: auto;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#header .container {
+    min-height: 8vh;
+    background-color: rgba(31, 30, 30, 0.24);
+}
+
+
+#header .navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 100%;
+ height: 100%;
+ max-width: 1300px;
+ margin: 0 auto;
+ padding: 0 50px
+}
+
+#header .navbar a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-decoration: none;
+    transition: .3s ease;}
+
+#header .navbar a:hover {
+    color: rgb(134, 12, 168);
+}
+
+#header .navbar a span {
+    color: rgb(134, 12, 168);
+}
+
+
+#header .navbar .nav-links ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+#hero{
+    background-image: url('./assets/barberBG.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+#hero h1 {  
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+
+#hero .mta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimsonBlue;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+
+#hero .mta:hover {
+    color: white;
+    background-color: crimson;
+}
+  
+
+/* About */  
+
+#about .about-container {
+display: flex; 
+text-align: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 100px 20px;
+}
+
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+
+#about .col-left .about-img {
+    position: relative;
+}
+
+#about .col-left .about-img .img {
+    height:250px ;
+    width: 300px
+}
+
+#about .col-left .about-img::after {
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98;
+    border: 7px solid crismson;
+    z-index: -1;
+}
+
+#about .col-right {
+    width: 100%;
+    
+}
+
+#about .col-right h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+ .ata {
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimsonBlue;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color,;
+    border-color: black;
+}
+
+/* Video */
+
+.vid{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center ; 
+    justify-content: center;
+    max-width: 1000px; 
+    margin: auto;
+    margin-top: 80px;}
+
+.video-container{
+    display:flex;
+    align-items: center ; 
+    justify-content: center;
+    
+}
+
+.video-caption{
+    /* padding: 10px 50px; */
+    margin-left: 180px;
+    color: crimson;
+    
+}
+
+.video-container .video{
+    width: 500px; 
+    height: 500px;
+    padding: 10px 30px;
+    max-width: 1000px; 
+    margin: auto;
+   }

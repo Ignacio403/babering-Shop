@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <style>
+       * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+        min-height:100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    #header {
+        height: auto;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #header .container {
+        min-height: 8vh;
+        background-color: rgba(31, 30, 30, 0.24);
+    }
+
+    #header .navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 100%;
+ height: 100%;
+ max-width: 1300px;
+ margin: 0 auto;
+ padding: 0 50px
+}
+
+#header .navbar a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-decoration: none;
+    transition: .3s ease;}
+
+    #header .navbar a:hover {
+    color: rgb(134, 12, 168);
+}
+
+#header .navbar a span {
+    color: rgb(134, 12, 168);
+}
+
+#header .navbar .nav-links ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+
+.audio{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center ; 
+    justify-content: center;
+    max-width: 1000px; 
+    margin: auto;
+    margin-top: 80px;}
+
+.aud{
+    padding: 20px 20px;
+    
+}
+
+.aud p{
+   padding-left: 80px;
+   color: crimson;
+    
+}
+
+.aud-content{
+    padding:15px 0px ;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="brand">
+                   <a href="./index.html"><h1><span>J</span>ullin Barbering Shop</h1></a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="./sample.html">Samples</a></li>
+                        <li><a href="./podcast.html">Audio</a></li>
+                        <li><a href="./design.html">Designs</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="audio">
+    <h2>Audio Gallery</h2>
+    <div class="aud" >
+        <div class="aud-content">
+        <audio controls>
+            <source src="/assets/audio1.mp3" type="audio/mp3">
+        </audio>
+        <p>Podcast about Barbering</p>
+    </div>
+    <div>
+        <audio controls>
+            <source src="/assets/getting-a-haircut-191933.mp3" type="audio/mp3">
+        </audio>
+        <p>Getting haircut</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>
